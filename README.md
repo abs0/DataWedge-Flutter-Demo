@@ -73,7 +73,7 @@ EventChannel(flutterEngine.dartExecutor, SCAN_CHANNEL).setStreamHandler(
             val intentFilter = IntentFilter()
             intentFilter.addAction(PROFILE_INTENT_ACTION)
             registerReceiver(
-                dataWedgeBroadcastReceiver, intentFilter)
+                dataWedgeBroadcastReceiver, intentFilter, RECEIVER_EXPORTED)
         }
 
         override fun onCancel(arguments: Any?) {

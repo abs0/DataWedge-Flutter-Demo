@@ -34,7 +34,7 @@ class MainActivity : FlutterActivity() {
                         intentFilter.addAction(DWInterface.DATAWEDGE_RETURN_ACTION)
                         intentFilter.addCategory(DWInterface.DATAWEDGE_RETURN_CATEGORY)
                         registerReceiver(
-                                dataWedgeBroadcastReceiver, intentFilter)
+                                dataWedgeBroadcastReceiver, intentFilter, RECEIVER_EXPORTED)
                     }
 
                     override fun onCancel(arguments: Any?) {
