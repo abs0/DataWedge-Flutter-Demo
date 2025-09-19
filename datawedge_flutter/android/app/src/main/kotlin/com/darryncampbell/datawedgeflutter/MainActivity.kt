@@ -15,7 +15,7 @@ import java.util.*
 //  This sample implementation is heavily based on the flutter demo at
 //  https://github.com/flutter/flutter/blob/master/examples/platform_channel/android/app/src/main/java/com/example/platformchannel/MainActivity.java
 
-class MainActivity: FlutterActivity() {
+class MainActivity : FlutterActivity() {
     private val COMMAND_CHANNEL = "com.darryncampbell.datawedgeflutter/command"
     private val SCAN_CHANNEL = "com.darryncampbell.datawedgeflutter/scan"
     private val PROFILE_INTENT_ACTION = "com.darryncampbell.datawedgeflutter.SCAN"
